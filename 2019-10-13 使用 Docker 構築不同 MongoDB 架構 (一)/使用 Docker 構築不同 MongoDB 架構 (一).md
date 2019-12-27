@@ -1,4 +1,4 @@
-![1_rat3S9caTDTLKnbAUhBuZg.png](resources/31D0195ACF5FC781F6628B807A425DC2.png =1500x1139)
+![1_rat3S9caTDTLKnbAUhBuZg.png](resources/31D0195ACF5FC781F6628B807A425DC2.png)
 
 # 目標
 
@@ -35,15 +35,15 @@ MongoDB 可能有以下架構：
         * 需要 High availability (HA) 的環境
         * 依硬體效能調整副本策略，如：你有較快/較大的硬碟
         * 不影響 Primary，使用 [Read Preference](https://docs.mongodb.com/manual/core/read-preference/) 讀取較近或快的副本
-![IMAGE](resources/8177C8A69E31D60050C8E0CBC13FE119.jpg =457x437)
+![IMAGE](resources/8177C8A69E31D60050C8E0CBC13FE119.jpg)
 
-3. [Sharded Cluster](https://docs.mongodb.com/manual/sharding/)
+1. [Sharded Cluster](https://docs.mongodb.com/manual/sharding/)
     * 建立難易度：高
     * 特色：資料遍佈在不同的 shard，每個 shard/config servers 都是 `Replica Set`，所以同時有 HA 的能力
     * 用途：
         * 依照 [Shard Keys](https://docs.mongodb.com/manual/core/sharding-shard-key/) 分散式地存取資料
         * 依硬體效能調整分散策略，如：你有較強/多核的CPU，常用資料可以放在讀寫快的主機
-![IMAGE](resources/B88E712DED055E3627E1D1B56BC1C39C.jpg =645x519)
+![IMAGE](resources/B88E712DED055E3627E1D1B56BC1C39C.jpg)
 
 當 MongoDB 變成叢集就會衍生出以下問題：
 1. 資料怎麼分散，分散的略策如何影響存取效能？ -> [Shard Keys](https://docs.mongodb.com/manual/core/sharding-shard-key/) 資料如何畫分 [chunk](https://docs.mongodb.com/manual/core/sharding-data-partitioning/index.html)、[Zones](https://docs.mongodb.com/manual/core/zone-sharding/) 指定資料存放位置、[Balancer](https://docs.mongodb.com/manual/core/sharding-balancer-administration/) 平衡 Shard 中的 chunk 數量
@@ -60,5 +60,5 @@ MongoDB 可能有以下架構：
 若你不想自己架設 MongoDB，可以考慮試用看看 MongoDB Atlas。它提供 DBaaS，幫你架設在 AWS, Azure 或 GCP。目前有 512 MB 免費空間且現送 $200 優惠券，代碼為 *MAXIME200*。見：[Quick Start: Getting Your Free MongoDB Atlas Cluster](https://www.mongodb.com/blog/post/quick-start-getting-your-free-mongodb-atlas-cluster?fbclid=IwAR0IGM60a1mlkZ89MekcJsjcqCskl8PYjfnKC8Nt8fVGnNzf59NkhemdUtw)
 
 你可以在以下地方輸入優惠券代碼
-![mongoalt1.jpg](resources/A52EE48F2277B236028D1FFE0110859F.jpg =2234x836)
-![mongoalt2.jpg](resources/3CE447D6A2A5D00130949E8F914EEE09.jpg =2048x1417)
+![mongoalt1.jpg](resources/A52EE48F2277B236028D1FFE0110859F.jpg)
+![mongoalt2.jpg](resources/3CE447D6A2A5D00130949E8F914EEE09.jpg)
