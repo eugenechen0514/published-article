@@ -1,4 +1,4 @@
-![1_rat3S9caTDTLKnbAUhBuZg.png](resources/31D0195ACF5FC781F6628B807A425DC2.png =1500x1139)
+![1_rat3S9caTDTLKnbAUhBuZg.png](resources/31D0195ACF5FC781F6628B807A425DC2.png)
 
 # 前言
 在[使用 Docker 構築不同 MongoDB 架構 (一)](https://medium.com/@yujiechen0514/%E4%BD%BF%E7%94%A8-docker-%E6%A7%8B%E7%AF%89%E4%B8%8D%E5%90%8C-mongodb-%E6%9E%B6%E6%A7%8B-%E4%B8%80-dde6ae2aa4fb) 提到 MongoDB 可能有以下架構：
@@ -27,7 +27,7 @@ Standalone 架構只有一個  MongoDB 的實體，存取資料的資料庫只�
 
 我們的資料夾目錄如下，並假設工作目錄在 *demo_mongo_cluster* (也就是 */Users/eugenechen/Documents/Projects/demo_mongo_cluster*)
 
-![IMAGE](resources/B71EA51FB50820FF9831E0CEE40317DB.jpg =490x157)
+![IMAGE](resources/B71EA51FB50820FF9831E0CEE40317DB.jpg)
 
 我們可以在 *demo_mongo_cluster* 工作目錄下執行以下操作
 1. 建立 MongoDB 容器並且在背景執行容器
@@ -37,7 +37,7 @@ Standalone 架構只有一個  MongoDB 的實體，存取資料的資料庫只�
     就會在背景執行 (`-d`) 一個 Standalone MongoDB。
   
     第一次執行應該會像這樣  
-    ![IMAGE](resources/23CBAF5CB8D016F55AB908F28A21FC55.jpg =575x362) 
+    ![IMAGE](resources/23CBAF5CB8D016F55AB908F28A21FC55.jpg) 
     紅線上相當於執行指令 `docker pull mongo:4.2`，下載 `mongo:4.2` 的映像檔到本機；紅線下是建立並執行容器。
 
 2. 停止執行容器
@@ -68,14 +68,14 @@ Standalone 架構只有一個  MongoDB 的實體，存取資料的資料庫只�
 docker run --rm -it --network host mongo:4.2 bash
 ```
 就會建立一個 *暫時的* 容器且進入(或稱執行)一個具有 MongoDB shell 終端機，接下來就有 `mongo` 可以用了。
-![IMAGE](resources/8A9A7AE0984580CF6C8AD767D7F68470.jpg =769x56)
+![IMAGE](resources/8A9A7AE0984580CF6C8AD767D7F68470.jpg)
 
 
 ## Docker 指令說明
 
 不要被長長的指令嚇到了，分開看就一目瞭然
 
-![Snip20191013_2.png](resources/897EE1A15EDC328B56D0277CF1F778D0.png =706x108)
+![Snip20191013_2.png](resources/897EE1A15EDC328B56D0277CF1F778D0.png)
 
 A (`docker run`) ：讀入某個映像檔，建立容器並執行。
 B (`--rm`) ：容器停止後自動刪除，也就是不能再用 `docker start` 重新執行容器。
